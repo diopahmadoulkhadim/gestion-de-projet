@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Détail du service | ProjetPlus</title>
+  <meta name="description" content="Détail de nos services d'accompagnement en gestion de projets : méthode, résultats et appel à l'action.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><span class="brand-icon"><i class="bi bi-diagram-3-fill"></i></span> Projet<span class="accent">Plus</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Menu"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="a-propos.html">À propos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="cours-du-soir.html">Cours du soir</a></li>
+          <li class="nav-item"><a class="nav-link" href="formations.html">Formations</a></li>
+          <li class="nav-item"><a class="nav-link" href="projets.html">Projets</a></li>
+          <li class="nav-item"><a class="nav-link" href="ressources.html">Ressources</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2">
+          <a href="https://wa.me/221775674388" class="btn-whatsapp-nav" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i></a>
+          <a href="inscription.html" class="btn btn-nav-cta d-none d-lg-inline-flex">Demander un accompagnement</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+          <li class="breadcrumb-item"><a href="services.html">Services</a></li>
+          <li class="breadcrumb-item active" id="breadcrumb-service">Détail</li>
+        </ol>
+      </nav>
+      <h1 id="service-title">Service</h1>
+      <p class="mb-0 opacity-75" id="service-subtitle">Description courte</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-8">
+          <div class="mb-4" id="service-icon-wrap">
+            <div class="icon-box" style="width:72px;height:72px;font-size:2rem;"><i class="bi bi-file-earmark-text" id="service-icon"></i></div>
+          </div>
+          <h2 class="mb-3">Description</h2>
+          <p id="service-desc" class="lead text-muted"></p>
+          <h3 class="mt-4 mb-3">Notre méthode</h3>
+          <div id="service-methode"></div>
+          <h3 class="mt-4 mb-3">Résultats attendus</h3>
+          <ul id="service-resultats" class="list-unstyled"></ul>
+          <div class="mt-5 p-4 bg-gray-50 rounded-lg">
+            <h4 class="mb-3">Prêt à démarrer ?</h4>
+            <p class="text-muted mb-3">Contactez-nous pour un diagnostic de votre besoin et un devis personnalisé.</p>
+            <a href="#" class="btn-primary-custom me-2" onclick="whatsappDevis(document.getElementById('service-title').textContent); return false;"><i class="bi bi-whatsapp"></i> Demander un devis</a>
+            <a href="contact.html" class="btn-outline-custom">Formulaire de contact</a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="detail-sidebar">
+            <h5 class="mb-3">Informations</h5>
+            <div class="info-item"><span>Public cible</span><strong id="side-public">Porteurs de projets</strong></div>
+            <div class="info-item"><span>Durée indicative</span><strong id="side-duree">Selon projet</strong></div>
+            <div class="info-item"><span>Format</span><strong>Présentiel / Distance</strong></div>
+            <div class="info-item"><span>Livrable</span><strong id="side-livrable">Document + accompagnement</strong></div>
+            <hr>
+            <a href="inscription.html" class="btn-accent w-100 justify-content-center mb-2"><i class="bi bi-rocket-takeoff"></i> Accompagnement</a>
+            <a href="services.html" class="btn-outline-custom w-100 justify-content-center">Tous les services</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a class="navbar-brand text-white mb-3 d-inline-flex" href="index.html"><span class="brand-icon"><i class="bi bi-diagram-3-fill"></i></span> Projet<span class="accent">Plus</span></a>
+          <p class="mt-2 mb-3">Conseil, accompagnement et formations en gestion de projets.</p>
+          <div class="social-links">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="https://wa.me/221775674388" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2"><h5>Navigation</h5><a href="index.html">Accueil</a><a href="a-propos.html">À propos</a><a href="services.html">Services</a><a href="projets.html">Projets</a></div>
+        <div class="col-6 col-lg-2"><h5>Formations</h5><a href="cours-du-soir.html">Cours du soir</a><a href="formations.html">Catalogue</a><a href="inscription.html">Inscription</a><a href="faq.html">FAQ</a></div>
+        <div class="col-lg-4"><h5>Contact</h5><p class="mb-1"><i class="bi bi-telephone me-2"></i> +221 77 567 43 88</p><p class="mb-1"><i class="bi bi-envelope me-2"></i> contact@projetplus.sn</p><p class="mb-1"><i class="bi bi-geo-alt me-2"></i> Lycée Macodou Sall de Kébémer, Sénégal</p></div>
+      </div>
+      <div class="footer-bottom text-center"><p class="mb-0">&copy; 2026 ProjetPlus. Tous droits réservés.</p></div>
+    </div>
+  </footer>
+  <a href="#" class="whatsapp-float" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/whatsapp.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    const SERVICES = {
+      conception: {
+        titre: 'Conception et rédaction de projets',
+        icon: 'bi-file-earmark-text',
+        subtitle: 'Documents de projets clairs et convaincants',
+        desc: 'Nous vous aidons à structurer et rédiger des documents de projets professionnels, adaptés aux exigences des bailleurs et partenaires. De l\'idée initiale au document finalisé, chaque étape est accompagnée.',
+        methode: '<ol><li>Diagnostic du besoin et des objectifs</li><li>Élaboration du cadre logique</li><li>Rédaction des sections (contexte, objectifs, activités, budget)</li><li>Relecture et finalisation</li></ol>',
+        resultats: ['Document de projet complet et cohérent', 'Objectifs SMART définis', 'Budget et chronogramme intégrés', 'Document prêt à soumettre'],
+        public: 'Porteurs de projets, ONG, associations',
+        duree: '1 à 3 semaines',
+        livrable: 'Document de projet finalisé'
+      },
+      faisabilite: {
+        titre: 'Études de faisabilité',
+        icon: 'bi-search',
+        subtitle: 'Analyser avant de lancer',
+        desc: 'Avant d\'investir du temps et des ressources, une étude de faisabilité permet d\'évaluer la viabilité technique, économique et financière de votre projet.',
+        methode: '<ol><li>Collecte et analyse des données</li><li>Évaluation technique et économique</li><li>Analyse financière et risques</li><li>Rapport de faisabilité avec recommandations</li></ol>',
+        resultats: ['Rapport de faisabilité complet', 'Scénarios chiffrés', 'Risques identifiés', 'Recommandation go / no-go'],
+        public: 'Entrepreneurs, organisations',
+        duree: '2 à 4 semaines',
+        livrable: 'Rapport d\'étude de faisabilité'
+      },
+      montage: {
+        titre: 'Montage de projets',
+        icon: 'bi-puzzle',
+        subtitle: 'Construire le projet de A à Z',
+        desc: 'Le montage de projet consiste à assembler tous les éléments : objectifs, activités, partenaires, budget et calendrier, pour aboutir à un projet opérationnel.',
+        methode: '<ol><li>Ateliers de cadrage</li><li>Structuration (cadre logique / théorie du changement)</li><li>Budget détaillé et chronogramme</li><li>Dossier de projet finalisé</li></ol>',
+        resultats: ['Projet structuré et cohérent', 'Partenaires identifiés', 'Budget et planning validés', 'Dossier prêt pour financement'],
+        public: 'ONG, associations, collectivités',
+        duree: '2 à 6 semaines',
+        livrable: 'Dossier de projet complet'
+      },
+      'business-plan': {
+        titre: 'Business Plans',
+        icon: 'bi-briefcase',
+        subtitle: 'Un BP solide pour convaincre',
+        desc: 'Nous élaborons des business plans professionnels destinés aux entrepreneurs, startups et porteurs d\'idées souhaitant convaincre banques, investisseurs ou partenaires.',
+        methode: '<ol><li>Étude de marché et concurrence</li><li>Modèle économique et offre</li><li>Projections financières (3–5 ans)</li><li>Rédaction et présentation du BP</li></ol>',
+        resultats: ['Business plan professionnel', 'Projections financières réalistes', 'Analyse de rentabilité', 'Support de présentation'],
+        public: 'Entrepreneurs, startups',
+        duree: '2 à 4 semaines',
+        livrable: 'Business Plan + annexe financière'
+      },
+      planification: {
+        titre: 'Planification stratégique',
+        icon: 'bi-map',
+        subtitle: 'Orienter l\'organisation sur le long terme',
+        desc: 'La planification stratégique permet de définir la vision, les axes prioritaires et le plan d\'action de votre organisation sur un horizon de 3 à 5 ans.',
+        methode: '<ol><li>Analyse SWOT / PESTEL</li><li>Définition vision, mission, valeurs</li><li>Axes stratégiques et objectifs</li><li>Plan d\'action et indicateurs</li></ol>',
+        resultats: ['Document de plan stratégique', 'Axes et priorités clairs', 'Plan d\'action opérationnel', 'Indicateurs de suivi'],
+        public: 'Organisations, entreprises, ONG',
+        duree: '3 à 6 semaines',
+        livrable: 'Plan stratégique + plan d\'action'
+      },
+      'analyse-financiere': {
+        titre: 'Analyse financière',
+        icon: 'bi-graph-up',
+        subtitle: 'Viabilité et rentabilité',
+        desc: 'Analyse approfondie de la viabilité financière de votre projet : projections, seuil de rentabilité, flux de trésorerie et indicateurs clés.',
+        methode: '<ol><li>Collecte des données financières</li><li>Modélisation des flux</li><li>Scénarios (optimiste / réaliste / pessimiste)</li><li>Rapport d\'analyse</li></ol>',
+        resultats: ['Projections financières', 'Seuil de rentabilité', 'Indicateurs de performance', 'Recommandations'],
+        public: 'Entrepreneurs, porteurs de projets',
+        duree: '1 à 3 semaines',
+        livrable: 'Rapport d\'analyse financière'
+      },
+      financement: {
+        titre: 'Recherche de financement',
+        icon: 'bi-cash-coin',
+        subtitle: 'Trouver les ressources pour votre projet',
+        desc: 'Nous vous aidons à identifier les sources de financement adaptées (bailleurs, fonds, crédits) et à préparer des dossiers de demande convaincants.',
+        methode: '<ol><li>Cartographie des financeurs</li><li>Adaptation du dossier au bailleur</li><li>Rédaction note conceptuelle / proposition</li><li>Suivi des soumissions</li></ol>',
+        resultats: ['Liste de financeurs ciblés', 'Dossiers adaptés', 'Notes conceptuelles', 'Suivi des opportunités'],
+        public: 'ONG, associations, entrepreneurs',
+        duree: 'Selon opportunités',
+        livrable: 'Dossiers de demande + suivi'
+      },
+      suivi: {
+        titre: 'Suivi-évaluation',
+        icon: 'bi-clipboard-check',
+        subtitle: 'Mesurer et améliorer les résultats',
+        desc: 'Mise en place de systèmes de suivi et d\'évaluation pour mesurer les résultats, rendre compte aux partenaires et améliorer la performance.',
+        methode: '<ol><li>Cadre de résultats / théorie du changement</li><li>Définition d\'indicateurs</li><li>Outils de collecte</li><li>Rapports et capitalisation</li></ol>',
+        resultats: ['Système de S&E opérationnel', 'Indicateurs suivis', 'Rapports périodiques', 'Recommandations d\'amélioration'],
+        public: 'ONG, projets financés',
+        duree: 'Selon durée du projet',
+        livrable: 'Système S&E + rapports'
+      },
+      risques: {
+        titre: 'Gestion des risques',
+        icon: 'bi-shield-exclamation',
+        subtitle: 'Anticiper et maîtriser les risques',
+        desc: 'Identification, analyse et plans de mitigation des risques susceptibles d\'affecter votre projet ou organisation.',
+        methode: '<ol><li>Identification des risques</li><li>Matrice de criticité</li><li>Plans de réponse</li><li>Suivi et mise à jour</li></ol>',
+        resultats: ['Registre des risques', 'Plans de mitigation', 'Procédures de continuité', 'Visibilité renforcée'],
+        public: 'Chefs de projet, organisations',
+        duree: '1 à 2 semaines',
+        livrable: 'Registre + plans de risques'
+      },
+      'plans-action': {
+        titre: 'Plans d\'action',
+        icon: 'bi-list-check',
+        subtitle: 'De la stratégie à l\'action',
+        desc: 'Traduction de la stratégie ou des objectifs en actions concrètes, avec responsables, échéances et ressources.',
+        methode: '<ol><li>Déclinaison des objectifs</li><li>Actions et responsabilités</li><li>Calendrier et ressources</li><li>Outils de suivi</li></ol>',
+        resultats: ['Plan d\'action opérationnel', 'Responsabilités claires', 'Échéances définies', 'Suivi facilité'],
+        public: 'Équipes, organisations',
+        duree: '1 à 2 semaines',
+        livrable: 'Plan d\'action détaillé'
+      },
+      'tableaux-bord': {
+        titre: 'Tableaux de bord',
+        icon: 'bi-speedometer2',
+        subtitle: 'Piloter avec les données',
+        desc: 'Conception de tableaux de bord de pilotage pour suivre l\'avancement, les indicateurs clés et les résultats en un coup d\'œil.',
+        methode: '<ol><li>Sélection des KPIs</li><li>Conception visuelle</li><li>Sources de données</li><li>Mise à jour et formation</li></ol>',
+        resultats: ['Tableau de bord opérationnel', 'KPIs pertinents', 'Visualisations claires', 'Décisions basées sur les faits'],
+        public: 'Managers, chefs de projet',
+        duree: '1 à 3 semaines',
+        livrable: 'Tableau de bord + guide'
+      },
+      conseil: {
+        titre: 'Conseil et accompagnement',
+        icon: 'bi-people',
+        subtitle: 'Un partenaire à vos côtés',
+        desc: 'Accompagnement personnalisé tout au long du cycle de vie de votre projet : de l\'idée à l\'évaluation, en passant par le montage et la mise en œuvre.',
+        methode: '<ol><li>Diagnostic initial</li><li>Feuille de route personnalisée</li><li>Sessions de suivi régulières</li><li>Appui ponctuel selon les besoins</li></ol>',
+        resultats: ['Avancement sécurisé', 'Compétences renforcées', 'Décisions éclairées', 'Résultats mesurables'],
+        public: 'Porteurs de projets, organisations',
+        duree: 'Selon besoin (forfait ou mensuel)',
+        livrable: 'Accompagnement + livrables selon étapes'
+      }
+    };
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get('id') || 'conception';
+      const s = SERVICES[id] || SERVICES.conception;
+
+      document.getElementById('service-title').textContent = s.titre;
+      document.getElementById('service-subtitle').textContent = s.subtitle;
+      document.getElementById('breadcrumb-service').textContent = s.titre;
+      document.getElementById('service-desc').textContent = s.desc;
+      document.getElementById('service-methode').innerHTML = s.methode;
+      document.getElementById('service-icon').className = 'bi ' + s.icon;
+      document.getElementById('side-public').textContent = s.public;
+      document.getElementById('side-duree').textContent = s.duree;
+      document.getElementById('side-livrable').textContent = s.livrable;
+      document.title = s.titre + ' | ProjetPlus';
+
+      const ul = document.getElementById('service-resultats');
+      s.resultats.forEach(function (r) {
+        const li = document.createElement('li');
+        li.className = 'mb-2 d-flex gap-2';
+        li.innerHTML = '<i class="bi bi-check-circle-fill text-accent mt-1"></i> ' + r;
+        ul.appendChild(li);
+      });
+    });
+  </script>
+</body>
+</html>

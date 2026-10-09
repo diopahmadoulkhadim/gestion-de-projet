@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Détail formation | ProjetPlus</title>
+  <meta name="description" content="Détail d'une formation en gestion de projets : programme, objectifs, horaires, tarifs et inscription.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><span class="brand-icon"><i class="bi bi-diagram-3-fill"></i></span> Projet<span class="accent">Plus</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Menu"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="a-propos.html">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="cours-du-soir.html">Cours du soir</a></li>
+          <li class="nav-item"><a class="nav-link active" href="formations.html">Formations</a></li>
+          <li class="nav-item"><a class="nav-link" href="projets.html">Projets</a></li>
+          <li class="nav-item"><a class="nav-link" href="ressources.html">Ressources</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2">
+          <a href="https://wa.me/221775674388" class="btn-whatsapp-nav" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i></a>
+          <a href="inscription.html" class="btn btn-nav-cta d-none d-lg-inline-flex">S'inscrire</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+          <li class="breadcrumb-item"><a href="formations.html">Formations</a></li>
+          <li class="breadcrumb-item active" id="bc-formation">Détail</li>
+        </ol>
+      </nav>
+      <h1 id="f-titre">Formation</h1>
+      <p class="mb-0 opacity-75" id="f-niveau-duree"></p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-8">
+          <p class="lead text-muted" id="f-description"></p>
+          <h3 class="mt-4 mb-3">Objectifs</h3>
+          <ul id="f-objectifs" class="list-unstyled"></ul>
+          <h3 class="mt-4 mb-3">Programme pédagogique</h3>
+          <div id="f-programme"></div>
+          <div class="mt-5 p-4 bg-gray-50 rounded-lg">
+            <h4 class="mb-3">S'inscrire à cette formation</h4>
+            <p class="text-muted mb-3">Places limitées. Inscrivez-vous via le formulaire ou directement sur WhatsApp.</p>
+            <a href="#" id="btn-insc-wa" class="btn-accent me-2"><i class="bi bi-whatsapp"></i> Inscription WhatsApp</a>
+            <a href="inscription.html" id="btn-insc-form" class="btn-primary-custom">Formulaire d'inscription</a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="detail-sidebar">
+            <h5 class="mb-3">Informations pratiques</h5>
+            <div class="info-item"><span>Niveau</span><strong id="s-niveau"></strong></div>
+            <div class="info-item"><span>Durée</span><strong id="s-duree"></strong></div>
+            <div class="info-item"><span>Horaires</span><strong id="s-horaires"></strong></div>
+            <div class="info-item"><span>Format</span><strong id="s-format"></strong></div>
+            <div class="info-item"><span>Séances</span><strong id="s-seances"></strong></div>
+            <div class="info-item"><span>Tarif</span><strong id="s-tarif" class="text-accent"></strong></div>
+            <div class="info-item"><span>Prérequis</span><strong id="s-prerequis"></strong></div>
+            <div class="info-item"><span>Formateur</span><strong>Consultant MBA Gestion de Projets</strong></div>
+            <div class="info-item"><span>Attestation</span><strong>Oui, en fin de formation</strong></div>
+            <hr>
+            <a href="inscription.html" class="btn-accent w-100 justify-content-center mb-2">S'inscrire</a>
+            <a href="formations.html" class="btn-outline-custom w-100 justify-content-center">Toutes les formations</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a class="navbar-brand text-white mb-3 d-inline-flex" href="index.html"><span class="brand-icon"><i class="bi bi-diagram-3-fill"></i></span> Projet<span class="accent">Plus</span></a>
+          <p class="mt-2 mb-3">Conseil, accompagnement et formations en gestion de projets.</p>
+        </div>
+        <div class="col-6 col-lg-2"><h5>Navigation</h5><a href="index.html">Accueil</a><a href="services.html">Services</a><a href="formations.html">Formations</a></div>
+        <div class="col-6 col-lg-2"><h5>Formations</h5><a href="cours-du-soir.html">Cours du soir</a><a href="inscription.html">Inscription</a><a href="faq.html">FAQ</a></div>
+        <div class="col-lg-4"><h5>Contact</h5><p class="mb-1"><i class="bi bi-telephone me-2"></i> +221 77 567 43 88</p><p class="mb-1"><i class="bi bi-envelope me-2"></i> contact@projetplus.sn</p></div>
+      </div>
+      <div class="footer-bottom text-center"><p class="mb-0">&copy; 2026 ProjetPlus. Tous droits réservés.</p></div>
+    </div>
+  </footer>
+  <a href="#" class="whatsapp-float" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/whatsapp.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    const FORMATIONS = {
+      'initiation-gestion': {
+        titre: 'Initiation à la gestion de projets',
+        niveau: 'Débutant',
+        duree: '4 semaines',
+        horaires: '16h00 – 18h00',
+        format: 'Présentiel / En ligne',
+        seances: '8 séances',
+        tarif: '75 000 FCFA',
+        prerequis: 'Aucun',
+        description: 'Découvrez les fondamentaux de la gestion de projets et acquérez les bases pour structurer vos idées. Formation idéale pour débuter ou consolider les notions essentielles.',
+        objectifs: ['Comprendre le cycle de vie d\'un projet', 'Identifier et formuler un projet', 'Définir des objectifs SMART', 'Élaborer un planning simple'],
+        programme: [
+          { n: 1, t: 'Introduction à la gestion de projets' },
+          { n: 2, t: 'Identification et formulation du projet' },
+          { n: 3, t: 'Définition des objectifs' },
+          { n: 4, t: 'Planification' },
+          { n: 5, t: 'Budget et ressources' },
+          { n: 6, t: 'Gestion des risques' },
+          { n: 7, t: 'Suivi-évaluation' },
+          { n: 8, t: 'Évaluation et clôture' }
+        ]
+      },
+      'montage-projets': {
+        titre: 'Conception et montage de projets',
+        niveau: 'Intermédiaire',
+        duree: '5 semaines',
+        horaires: '16h00 – 18h00',
+        format: 'Présentiel / En ligne',
+        seances: '10 séances',
+        tarif: '95 000 FCFA',
+        prerequis: 'Bases de gestion de projets',
+        description: 'Apprenez à concevoir, structurer et monter un projet complet de A à Z, jusqu\'au dossier de financement.',
+        objectifs: ['Réaliser un diagnostic de besoins', 'Rédiger un document de projet', 'Structurer le cadre logique', 'Préparer un dossier de financement'],
+        programme: [
+          { n: 1, t: 'Diagnostic et analyse de besoins' },
+          { n: 2, t: 'Cadre logique et théorie du changement' },
+          { n: 3, t: 'Objectifs, résultats et indicateurs' },
+          { n: 4, t: 'Activités et chronogramme' },
+          { n: 5, t: 'Budget et ressources' },
+          { n: 6, t: 'Partenariats et gouvernance' },
+          { n: 7, t: 'Risques et hypothèses' },
+          { n: 8, t: 'Rédaction du document de projet' },
+          { n: 9, t: 'Dossier de financement' },
+          { n: 10, t: 'Présentation et finalisation' }
+        ]
+      },
+      'business-plan': {
+        titre: 'Élaboration d\'un Business Plan',
+        niveau: 'Intermédiaire',
+        duree: '4 semaines',
+        horaires: '16h00 – 18h00',
+        format: 'Présentiel / En ligne',
+        seances: '8 séances',
+        tarif: '85 000 FCFA',
+        prerequis: 'Idée d\'entreprise ou projet',
+        description: 'Construisez un business plan solide et convaincant pour votre projet entrepreneurial.',
+        objectifs: ['Analyser le marché et la concurrence', 'Élaborer le modèle économique', 'Construire les projections financières', 'Présenter un BP professionnel'],
+        programme: [
+          { n: 1, t: 'Introduction au Business Plan' },
+          { n: 2, t: 'Étude de marché' },
+          { n: 3, t: 'Offre et positionnement' },
+          { n: 4, t: 'Modèle économique' },
+          { n: 5, t: 'Plan marketing et commercial' },
+          { n: 6, t: 'Organisation et équipe' },
+          { n: 7, t: 'Projections financières' },
+          { n: 8, t: 'Rédaction et présentation du BP' }
+        ]
+      },
+      'planification-strategique': {
+        titre: 'Planification stratégique',
+        niveau: 'Avancé',
+        duree: '4 semaines',
+        horaires: '16h00 – 18h00',
+        format: 'Présentiel / En ligne',
+        seances: '8 séances',
+        tarif: '90 000 FCFA',
+        prerequis: 'Expérience en gestion',
+        description: 'Maîtrisez les outils de planification stratégique pour orienter organisations et projets.',
+        objectifs: ['Réaliser une analyse SWOT / PESTEL', 'Définir vision, mission et objectifs', 'Élaborer un plan stratégique', 'Suivre la mise en œuvre'],
+        programme: [
+          { n: 1, t: 'Concepts de planification stratégique' },
+          { n: 2, t: 'Analyse de l\'environnement (SWOT, PESTEL)' },
+          { n: 3, t: 'Vision, mission, valeurs' },
+          { n: 4, t: 'Axes stratégiques' },
+          { n: 5, t: 'Objectifs et indicateurs' },
+          { n: 6, t: 'Plan d\'action' },
+          { n: 7, t: 'Ressources et budget' },
+          { n: 8, t: 'Suivi et révision du plan' }
+        ]
+      },
+      'suivi-evaluation': {
+        titre: 'Suivi-évaluation des projets',
+        niveau: 'Intermédiaire',
+        duree: '3 semaines',
+        horaires: '16h00 – 18h00',
+        format: 'Présentiel / En ligne',
+        seances: '6 séances',
+        tarif: '70 000 FCFA',
+        prerequis: 'Bases de gestion de projets',
+        description: 'Apprenez à suivre, mesurer et évaluer la performance de vos projets.',
+        objectifs: ['Concevoir un système de suivi', 'Définir des indicateurs pertinents', 'Collecter et analyser les données', 'Rédiger un rapport d\'évaluation'],
+        programme: [
+          { n: 1, t: 'Fondamentaux du suivi-évaluation' },
+          { n: 2, t: 'Cadre de résultats et indicateurs' },
+          { n: 3, t: 'Outils de collecte de données' },
+          { n: 4, t: 'Analyse et interprétation' },
+          { n: 5, t: 'Rapports de suivi et d\'évaluation' },
+          { n: 6, t: 'Capitalisation et apprentissage' }
+        ]
+      },
+      'recherche-financement': {
+        titre: 'Recherche et mobilisation de financements',
+        niveau: 'Intermédiaire',
+        duree: '4 semaines',
+        horaires: '16h00 – 18h00',
+        format: 'Présentiel / En ligne',
+        seances: '8 séances',
+        tarif: '80 000 FCFA',
+        prerequis: 'Projet structuré',
+        description: 'Identifiez les sources de financement et préparez des dossiers de demande convaincants.',
+        objectifs: ['Cartographier les bailleurs et financeurs', 'Adapter le dossier au bailleur', 'Rédiger une note conceptuelle', 'Négocier et finaliser le financement'],
+        programme: [
+          { n: 1, t: 'Sources de financement' },
+          { n: 2, t: 'Cartographie des bailleurs' },
+          { n: 3, t: 'Exigences des financeurs' },
+          { n: 4, t: 'Note conceptuelle' },
+          { n: 5, t: 'Proposition complète' },
+          { n: 6, t: 'Budget et justificatifs' },
+          { n: 7, t: 'Soumission et suivi' },
+          { n: 8, t: 'Négociation et contractualisation' }
+        ]
+      }
+    };
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const id = new URLSearchParams(window.location.search).get('id') || 'initiation-gestion';
+      const f = FORMATIONS[id] || FORMATIONS['initiation-gestion'];
+
+      document.getElementById('f-titre').textContent = f.titre;
+      document.getElementById('bc-formation').textContent = f.titre;
+      document.getElementById('f-niveau-duree').textContent = f.niveau + ' · ' + f.duree + ' · ' + f.tarif;
+      document.getElementById('f-description').textContent = f.description;
+      document.getElementById('s-niveau').textContent = f.niveau;
+      document.getElementById('s-duree').textContent = f.duree;
+      document.getElementById('s-horaires').textContent = f.horaires;
+      document.getElementById('s-format').textContent = f.format;
+      document.getElementById('s-seances').textContent = f.seances;
+      document.getElementById('s-tarif').textContent = f.tarif;
+      document.getElementById('s-prerequis').textContent = f.prerequis;
+      document.title = f.titre + ' | ProjetPlus';
+
+      const ul = document.getElementById('f-objectifs');
+      f.objectifs.forEach(function (o) {
+        const li = document.createElement('li');
+        li.className = 'mb-2 d-flex gap-2';
+        li.innerHTML = '<i class="bi bi-check-circle-fill text-accent mt-1"></i> ' + o;
+        ul.appendChild(li);
+      });
+
+      const prog = document.getElementById('f-programme');
+      f.programme.forEach(function (m) {
+        const div = document.createElement('div');
+        div.className = 'module-item';
+        div.innerHTML = '<div class="module-number">' + m.n + '</div><div><strong>Module ' + m.n + '</strong><br>' + m.t + '</div>';
+        prog.appendChild(div);
+      });
+
+      document.getElementById('btn-insc-wa').onclick = function (e) {
+        e.preventDefault();
+        whatsappInscription(f.titre);
+      };
+      document.getElementById('btn-insc-form').href = 'inscription.html?formation=' + encodeURIComponent(f.titre);
+    });
+  </script>
+</body>
+</html>

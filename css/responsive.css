@@ -1,0 +1,183 @@
+/* ============================================
+   RESPONSIVE STYLES
+   ============================================ */
+
+/* Large screens */
+@media (min-width: 1200px) {
+  .hero-title {
+    font-size: 3.25rem;
+  }
+}
+
+/* Tablets */
+@media (max-width: 991.98px) {
+  .hero {
+    padding: 4.5rem 0 4rem;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2.25rem;
+  }
+
+  .hero-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero::after {
+    height: 50px;
+  }
+
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  .section-title {
+    font-size: 1.9rem;
+  }
+
+  .expertise-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .expertise-tags {
+    justify-content: center;
+  }
+
+  .cours-soir-section {
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+  }
+
+  .cours-soir-section p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .detail-sidebar {
+    position: static;
+    margin-top: 2rem;
+  }
+
+  .navbar-nav {
+    padding: 1rem 0;
+  }
+
+  .nav-link {
+    padding: 0.75rem 1rem !important;
+  }
+
+  .btn-nav-cta {
+    margin: 0.5rem 0;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+  .hero {
+    padding: 3.5rem 0 3rem;
+  }
+
+  .hero-title {
+    font-size: 1.85rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-buttons .btn-primary-custom,
+  .hero-buttons .btn-outline-light-custom {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .section {
+    padding: 2.5rem 0;
+  }
+
+  .section-title {
+    font-size: 1.65rem;
+  }
+
+  .page-header {
+    padding: 3rem 0 2rem;
+  }
+
+  .page-header h1 {
+    font-size: 1.85rem;
+  }
+
+  .stat-number {
+    font-size: 2.25rem;
+  }
+
+  .whatsapp-float {
+    width: 54px;
+    height: 54px;
+    bottom: 16px;
+    right: 16px;
+    font-size: 1.5rem;
+  }
+
+  .cours-soir-section {
+    padding: 2rem 1.25rem;
+  }
+
+  .card-service {
+    padding: 1.5rem;
+  }
+
+  .footer {
+    padding: 3rem 0 1.5rem;
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+    display: flex;
+  }
+
+  .module-item {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .calendar-event {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 575.98px) {
+  .hero-title {
+    font-size: 1.65rem;
+  }
+
+  .btn-primary-custom,
+  .btn-accent,
+  .btn-outline-custom {
+    padding: 0.65rem 1.25rem;
+    font-size: 0.95rem;
+  }
+
+  .expertise-avatar {
+    width: 110px;
+    height: 110px;
+  }
+}

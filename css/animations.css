@@ -1,0 +1,133 @@
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+/* Fade In */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Slide Up */
+.slide-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.slide-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Zoom In */
+.zoom-in {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.zoom-in.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Stagger delays */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+.delay-5 { transition-delay: 0.5s; }
+.delay-6 { transition-delay: 0.6s; }
+
+/* Hover effects */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+}
+
+/* Button pulse on focus */
+.btn-primary-custom:focus,
+.btn-accent:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(232, 168, 56, 0.4);
+}
+
+/* Counter animation base */
+.counter {
+  display: inline-block;
+}
+
+/* Smooth image load */
+img {
+  transition: opacity 0.3s ease;
+}
+
+/* Navbar transition already in style.css */
+
+/* Card hover shine */
+.card-service::after,
+.card-formation::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  transition: left 0.5s ease;
+  pointer-events: none;
+}
+
+.card-service,
+.card-formation {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-service:hover::after,
+.card-formation:hover::after {
+  left: 100%;
+}
+
+/* Loading spinner for forms */
+.spinner-border-sm-custom {
+  width: 1rem;
+  height: 1rem;
+  border-width: 0.15em;
+}
+
+/* Success checkmark animation */
+@keyframes checkmark {
+  0% { transform: scale(0); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.checkmark-anim {
+  animation: checkmark 0.4s ease forwards;
+}
+
+/* Reduce motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in,
+  .slide-up,
+  .zoom-in,
+  .card-service,
+  .card-formation,
+  .hover-lift {
+    transition: none !important;
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
