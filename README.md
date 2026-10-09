@@ -31,6 +31,8 @@ gestion-projets/
 ├── projets.html
 ├── ressources.html
 ├── faq.html
+├── tarifs.html
+├── mentions-legales.html
 ├── inscription.html
 ├── contact.html
 ├── css/
